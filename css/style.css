@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/assets/Minecraft.ttf') format('truetype');
+}
+
+:root {
+  --font-light-on-dark: white;
+  --font-accent: red;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1em;
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace, sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  height: 400px;
+}
+
+h1 {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.feature-list ul {
+  padding-left: 2em;
+  text-indent: -1.35em;
+}
+
+.feature-list ul li {
+  list-style: none;
+  margin-bottom: 0.7em;
+  /* margin: 0; */
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6em;
+}
+
+.feature-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #0066cc;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0052a3;
+}
+
+.sidebar {
+  background: rgb(84, 24, 103);
+  background: radial-gradient(circle, rgba(84, 24, 103, 1) 0%, rgba(66, 24, 103, 1) 100%);
+  color: white;
+  padding: 20px;
+  padding-top: 40px;
+  width: 20%;
+  border-radius: 8px 0 0 8px;
+  font-family: 'Cousine', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px;
+  width: 70%;
+}
+
+.feather {
+  width: .8em;
+  height: .8em;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+@media (max-width: 600px) {
+  body {}
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    border-radius: 8px 8px 0 0;
+  }
+}
